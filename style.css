@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'neue haas roman';
+    src: url(_links/NeueHaasDisplayRoman.ttf);
+  }
+@font-face {
+    font-family: 'neue haas black';
+    src: url(_links/NeueHaasDisplayBlack.ttf);
+  }
