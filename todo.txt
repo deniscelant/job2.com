@@ -1,0 +1,32 @@
+eu preciso criar uma logica no meu site, onde quando eu clico em algum produto, todas as
+minhas páginas dinâmicas tem suas informações adaptadas conforme o produto que o user
+clicou. Essa adaptação inclui: textos, preços, imagens, formulários e cálculos
+de orçamento.
+
+Após o processo de jornada de compra. O cliente recebe acesso a um dashboard onde ele
+pode editar, acompanhar, entrar em contato ou cancelar um pedido. Sendo esse dashboard
+uma página simples com uma lista de projetos em andamento ou excluídos.
+
+Quando o projeto for finalizado, além do especialista entrar em contato via email e
+whatsapp. No dashboard, o projeto finalizado aparecerá como pronto para aprovação tendo
+como opção ver o projeto completo com opção de download nos arquivos apropriados
+e um chat ou botão do whatsapp para entrar em contato com a empresa para falar
+sobre o projeto.
+
+JOBS DATABASE:
+
+- projetos
+- materiais individuais
+- portfolio
+- formulários
+
+CLIENT DATABASE:
+
+- informações pessoais
+- contato
+- financeiro
+- jurídico
+
+LAYOUT PATTERNS:
+
+- 
