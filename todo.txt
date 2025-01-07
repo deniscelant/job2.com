@@ -30,3 +30,47 @@ CLIENT DATABASE:
 LAYOUT PATTERNS:
 
 - 
+
+
+O QUE EU FIZ ATÉ AGORA:
+
+- ESTRUTURAÇÃO DA HOME
+- STYLE BÁSICO DE CORES E FONTES
+- CATÁLOGO TINHA FEITO MAS PERDI A VERSÃO
+- PAGINAS: PRODUTO, PERSONALIZAR, FORMULÁRIO, ENVIE ARQUIVOS E PAGAMENTO
+
+PRIORIDADES:
+
+1° CRIAR TODA A LÓGICA DO SITE
+- ESCOLHA DE PRODUTO
+//
+    Identificar o clique do produto (id do botão personalizado; o id ficará no objeto jobs)
+    Após identificação do produto clicado, substituir todas as informações (nome do projeto, slogan, descrição, preços, formulários)
+    Armazenar as escolhas de personalização do projeto num ARRAY = PLUS_JOBS
+//
+- PERSONALIZAÇÃO
+//
+    Listar todos os jobs unitários nessa página. Criar um ARRAY = EXTRA_JOBS.
+//
+- BRIEFING
+//
+    Cada produto terá um formulário padrão. As perguntas serão feitas para agregar mais informações do cliente no projeto, afim de buscar um projeto mais detalhado.
+
+    FORM => BRANDBOOK
+    //
+        Qual é o nome da sua marca?
+        Qual é o segmento da sua empresa?
+        Para quais públicos você quer se comunicar?
+        Se seu negócio for local, onde fica localizado?
+        Qual seu ticket médio? 
+        Você tem alguma ideia inicial de como deveria ser sua marca?
+        Você tem alguma referência estética de algum concorrente ou empresa de outros segmentos?
+    //
+//
+- FINANCEIRO
+- PAGAMENTO
+- DASHBOARD
+
+2° FAZER OS DATABASES
+3° FAZER OS FORMULÁRIOS DE CADA PRODUTO
+4° FINALIZAR LAYOUT DO SITE INTEIRO
