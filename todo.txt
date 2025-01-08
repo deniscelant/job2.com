@@ -140,16 +140,16 @@ TAREFAS:
             O que será entregue no BrandBook?
 
             - Impressos de pequena tiragem
-                Cartões de visita
-            - Simbologia
-                - A principal função da simbogia é a lembrança de marca. Com a nossa expertise em logos, vamos desenvolver excelentes símbolos com técnicas de desenho, geometria e psicologia da forma.
-            - Tipografia
-                - Um dos membros mais importantes de uma identidade visual é a tipografia. A forma da fonte da sua marca não pode ser escolhido aleatóriamente! Uma boa tipografia deve se adequar a linguagem da sua empresa, além de deixar a estética dos seus textos com uma aparência mais bonita!
-            - Cores
-                - Indiscutivelmente, as cores da sua marca são essenciais para definir certos conceitos do seu logotipo. Elas podem causar emoções, opiniões e principalmente facilitar o entendimento do seu nicho!
+                Cartões de visita, adesivos, canetas, bonés entre outros brindes
+            - Embalagens
+                - Rótulos, embalagens de alimentos, envelopes e pastas
+            - Editoriais
+                - Catálogos, cardápios, livros e ebooks
+            - Impressos de grande tiragem
+                - Outdoors, banners, cartazes e adesivos para veículos
             - Aplicações na marca em contextos reais
 
-            valor: R$ 899,00
+            valor: R$ 599,00
         ]
     //
 //

@@ -1,5 +1,6 @@
 export const jobs = [
   {
+    id: "brand",
     name: "BrandBook",
     slogan: "Crie marcas memoráveis e aplique-as nos seus materiais de marketing!",
     desc: `
@@ -30,6 +31,7 @@ export const jobs = [
     price: 899.00,
   },
   {
+    id: "print",
     name: "Printed Pack",
     slogan: "Crie materiais gráficos para seu escritório ou para seu ponto de venda!",
     desc: 
@@ -61,6 +63,7 @@ export const jobs = [
     price: 599.00,
   },
   {
+    id: "web",
     name: "Web Pack",
     slogan: "Crie seu site institucional ou uma página de vendas!",
     desc: 
@@ -76,6 +79,7 @@ export const jobs = [
     price: 699.00,
   },
   {
+    id: "media",
     name: "Media Pack",
     slogan: "Faça seu feed ter mais engajamento e converta mais clientes com criativos de conversão!",
     desc: 
@@ -91,6 +95,7 @@ export const jobs = [
     price: 399.00,
   },
   {
+    id: "visual",
     name: "Visual Pack",
     slogan: "Crie vídeos ou animações profissionais para apresentar seu produtos!",
     desc: 
