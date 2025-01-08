@@ -23,7 +23,6 @@ function templateModel() {
 function renderCatalog() {
   jobs.forEach((job) => {
     catalog.innerHTML = `
-        <h1>Catálogo</h1>
         <div id="productCatalog">
         <div id="infoProduct">
             <h1>${job.name}</h1>
