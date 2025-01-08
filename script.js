@@ -6,23 +6,18 @@ const tm_tittle = document.getElementsByClassName("tm_tittle");
 const tm_slogan = document.getElementsByClassName("tm_slogan");
 const tm_desc = document.getElementsByClassName("tm_desc");
 const tm_price = document.getElementsByClassName("tm_price");
+const tm_image = document.getElementsByClassName("tm_image")
 
 window.addEventListener("DOMContentLoaded", () => {
   renderCatalog();
   // pickJob();
 });
 
-function util_foreach(foreach) {
-  foreach.forEach((e) => e);
-}
 
 function templateModel() {
-  var clicked_job = button.textContent;
-  if (clicked_job === jobs[util_foreach(jobs)].name) {
     Array.from(tm_tittle).forEach((e) => {
       e.textContent = "Tudo bem?";
     });
-  }
 }
 
 function renderCatalog() {

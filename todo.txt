@@ -39,7 +39,7 @@ O QUE EU FIZ ATÉ AGORA:
 - CATÁLOGO TINHA FEITO MAS PERDI A VERSÃO
 - PAGINAS: PRODUTO, PERSONALIZAR, FORMULÁRIO, ENVIE ARQUIVOS E PAGAMENTO
 
-PRIORIDADES:
+TAREFAS:
 
 1° CRIAR TODA A LÓGICA DO SITE
 - ESCOLHA DE PRODUTO
@@ -54,7 +54,7 @@ PRIORIDADES:
 //
 - BRIEFING
 //
-    Cada produto terá um formulário padrão. As perguntas serão feitas para agregar mais informações do cliente no projeto, afim de buscar um projeto mais detalhado.
+    Cada produto terá uma pergunta padrão ou um formulário de perguntas. Esses questionários serão feitos para agregar mais informações do cliente no projeto, afim de buscar um depoimento mais detalhado.
 
     FORM => BRANDBOOK
     //
@@ -65,12 +65,91 @@ PRIORIDADES:
         Qual seu ticket médio? 
         Você tem alguma ideia inicial de como deveria ser sua marca?
         Você tem alguma referência estética de algum concorrente ou empresa de outros segmentos?
+        Quais as suas preferências de cores?
+        Você tem algum estilo tipográfico em mente?
+    //
+
+    PERGUNTA => PRINTED PACK
+    //
+        Descreva em detalhes, como você gostaria que o material gráfico fosse feito. Se quiser, fale sobre
+        referências que tem em mente.
+    //
+
+    PERGUNTA => WEB PACK
+    //
+        Descreva em detalhes, como você gostaria que o site ou landing page fosse feito. Se quiser, fale sobre
+        referências que tem em mente.
+    //
+
+    PERGUNTA => MEDIA PACK
+    //
+        Descreva em detalhes, como você gostaria que as artes fossem feitas. Se quiser, fale sobre
+        referências que tem em mente.
+    //
+
+    PERGUNTA => VISUAL PACK
+    //
+        Descreva em detalhes, como você gostaria que o vídeo/motion fosse feito. Se quiser, fale sobre
+        referências que tem em mente.
     //
 //
 - FINANCEIRO
+//
+    A página de pagamento receberá todas as informações de valores dos jobs escolhidos e irá somar todos os valores, junto com descontos inclusos, e criar um QR code de pagamento.
+
+//
 - PAGAMENTO
+//
+    Cada pedido do site será registrado num ARRAY de OBJETOS = pedidos. Com todas as informações do job e do cliente.
+
+//
 - DASHBOARD
+//
+    Criar uma página com 2 colunas, sendo a primeira para contato, com links úteis. A segunda coluna terá
+    a lista de jobs em andamento/cancelados/finalizados. Cada job será representado por um tabloid clicável
+    para o user editar ou cancelar o projeto
+//
 
 2° FAZER OS DATABASES
-3° FAZER OS FORMULÁRIOS DE CADA PRODUTO
-4° FINALIZAR LAYOUT DO SITE INTEIRO
+//
+    JOBS
+    //
+        BrandBook = [
+            Este é o documento mais importante do seu manual de comunicação. Ele define como sua marca deve ser aplicada e explica todo o processo criativo por trás dele.
+            Crie uma marca memorável e aplique ela em todos os materiais de mídia por todas as campanhas de marketing que você irá fazer!
+
+            O que será entregue no BrandBook?
+
+            - Defesa e processo criativo
+                - Entenda as ideias por trás dos nossos logotipos! E vamos te provar que vale a pena investir no nosso trabalho.
+            - Simbologia
+                - A principal função da simbogia é a lembrança de marca. Com a nossa expertise em logos, vamos desenvolver excelentes símbolos com técnicas de desenho, geometria e psicologia da forma.
+            - Tipografia
+                - Um dos membros mais importantes de uma identidade visual é a tipografia. A forma da fonte da sua marca não pode ser escolhido aleatóriamente! Uma boa tipografia deve se adequar a linguagem da sua empresa, além de deixar a estética dos seus textos com uma aparência mais bonita!
+            - Cores
+                - Indiscutivelmente, as cores da sua marca são essenciais para definir certos conceitos do seu logotipo. Elas podem causar emoções, opiniões e principalmente facilitar o entendimento do seu nicho!
+            - Aplicações na marca em contextos reais
+
+            valor: R$ 899,00
+        ]
+
+        Printed pack = [
+            
+
+            O que será entregue no BrandBook?
+
+            - Defesa e processo criativo
+                - Entenda as ideias por trás dos nossos logotipos! E vamos te provar que vale a pena investir no nosso trabalho.
+            - Simbologia
+                - A principal função da simbogia é a lembrança de marca. Com a nossa expertise em logos, vamos desenvolver excelentes símbolos com técnicas de desenho, geometria e psicologia da forma.
+            - Tipografia
+                - Um dos membros mais importantes de uma identidade visual é a tipografia. A forma da fonte da sua marca não pode ser escolhido aleatóriamente! Uma boa tipografia deve se adequar a linguagem da sua empresa, além de deixar a estética dos seus textos com uma aparência mais bonita!
+            - Cores
+                - Indiscutivelmente, as cores da sua marca são essenciais para definir certos conceitos do seu logotipo. Elas podem causar emoções, opiniões e principalmente facilitar o entendimento do seu nicho!
+            - Aplicações na marca em contextos reais
+
+            valor: R$ 899,00
+        ]
+    //
+//
+3° FINALIZAR LAYOUT DO SITE INTEIRO
