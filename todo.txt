@@ -135,11 +135,12 @@ TAREFAS:
 
         Printed pack = [
             
+            Crie materiais gráficos para seu escritório ou para seu ponto de venda!
 
             O que será entregue no BrandBook?
 
-            - Defesa e processo criativo
-                - Entenda as ideias por trás dos nossos logotipos! E vamos te provar que vale a pena investir no nosso trabalho.
+            - Impressos de pequena tiragem
+                Cartões de visita
             - Simbologia
                 - A principal função da simbogia é a lembrança de marca. Com a nossa expertise em logos, vamos desenvolver excelentes símbolos com técnicas de desenho, geometria e psicologia da forma.
             - Tipografia
