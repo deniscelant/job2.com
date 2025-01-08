@@ -1,4 +1,4 @@
-import { jobs, listOfJobs, portfolio } from "./db.js";
+import { jobs} from "./db.js";
 
 const catalog = document.getElementById("catalog");
 const briefingForm = document.getElementById("briefingForm");
