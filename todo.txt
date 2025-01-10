@@ -48,12 +48,33 @@ TAREFAS:
     Após identificação do produto clicado, substituir todas as informações (nome do projeto, slogan, descrição, preços, formulários)
     Armazenar as escolhas de personalização do projeto num ARRAY = PLUS_JOBS
     
-    --------PROBLEMA A RESOLVER------------
+    --------PROBLEMA RESOLVIDO------------
     Quando um id do array jobs for identificado por um botão, retornar o objeto correspondente ao id
 //
 - PERSONALIZAÇÃO
 //
     Listar todos os jobs unitários nessa página. Criar um ARRAY = EXTRA_JOBS.
+
+    LISTA DE TODAS AS PEÇAS INDIVIDUAIS
+    //
+        Logo
+        Arte para feed/story
+        Video/motion
+        Cartão de visita
+        Panfleto
+        Folder sanfonado
+        Papel timbrado
+        Pasta para documentos
+        Envelope
+        Rótulo
+        Caderno/Agenda
+        Embalagens
+        Banner digital
+        eBook
+        Catálogo/Cardápio
+        Adesivo
+        Outdoor
+    //
 //
 - BRIEFING
 //
@@ -70,6 +91,19 @@ TAREFAS:
         Você tem alguma referência estética de algum concorrente ou empresa de outros segmentos?
         Quais as suas preferências de cores?
         Você tem algum estilo tipográfico em mente?
+
+        <form id="brandbook_form" action="">
+    <label for="q1">Qual é o nome da sua marca?</label><input type="text">
+    <label for="q2">Qual é o segmento da sua empresa?</label><input type="text">
+    <label for="q3">Para quais públicos você quer se comunicar?</label><input type="text">
+    <label for="q4">Se seu negócio for local, onde fica localizado?</label><input type="text">
+    <label for="q5">Qual seu ticket médio?</label><input type="text">
+    <label for="q6">Você tem alguma ideia inicial de como deveria ser sua marca?</label><input type="text">
+    <label for="q7">Você tem alguma referência estética de algum concorrente ou empresa de outros segmentos?</label><input type="text">
+    <label for="q8">Quais as suas preferências de cores?</label><input type="text">
+    <label for="q9">Você tem algum estilo tipográfico em mente?</label><input type="text">
+    <button type="submit">Enviar</button>
+  </form>
     //
 
     PERGUNTA => PRINTED PACK

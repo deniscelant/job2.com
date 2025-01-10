@@ -26,7 +26,6 @@ function renderCatalog() {
           <div id="infoProduct">
               <h1>${job.name}</h1>
               <h4>${job.slogan}</h4>
-              <p>${job.desc}</p>
               <h3>a partir de R$${job.price}</h3>
               <a href="pagina-produto.html"><button class="p_button" id = "${job.id}">Começar</button></a>
           </div>
@@ -65,6 +64,7 @@ function storageInfo() {
     id.innerHTML = localStorage.getItem("job_price");
   });
 }
+
 // for (let button of p_button) {
 //   button.onclick = (e) => {
 //     const target = e.target.getAttribute("id");

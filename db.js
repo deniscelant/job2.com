@@ -116,16 +116,9 @@ export const forms = [
     name: "brandbook",
     form: `
             
-  <form id="brandbook_form" action="">
-    <label for="q1">Qual é o nome da sua marca?</label><input type="text">
-    <label for="q2">Qual é o segmento da sua empresa?</label><input type="text">
-    <label for="q3">Para quais públicos você quer se comunicar?</label><input type="text">
-    <label for="q4">Se seu negócio for local, onde fica localizado?</label><input type="text">
-    <label for="q5">Qual seu ticket médio?</label><input type="text">
-    <label for="q6">Você tem alguma ideia inicial de como deveria ser sua marca?</label><input type="text">
-    <label for="q7">Você tem alguma referência estética de algum concorrente ou empresa de outros segmentos?</label><input type="text">
-    <label for="q8">Quais as suas preferências de cores?</label><input type="text">
-    <label for="q9">Você tem algum estilo tipográfico em mente?</label><input type="text">
+  <form id="printed_pack_form" action="">
+    <label for="q1">Descreva em detalhes, como você gostaria que o seu brandbook fosse feito. Se quiser, fale sobre
+        referências que tem em mente.</label><textarea></textarea>
     <button type="submit">Enviar</button>
   </form>
         `,
@@ -175,3 +168,193 @@ export const forms = [
         `,
   },
 ];
+
+export const extra_jobs = [
+  {
+    name: "logo",
+    form: `
+            
+  <form id="extra_job_logo_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Arte para feed/story",
+    form: `
+            
+  <form id="extra_job_arte_media_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Vídeo ou motion",
+    form: `
+            
+  <form id="extra_job_video_motion_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Cartão de visita",
+    form: `
+            
+  <form id="extra_job_cartao_visita_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Panfleto",
+    form: `
+            
+  <form id="extra_job_panfleto_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Folder sanfonado",
+    form: `
+            
+  <form id="extra_job_folder_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Papel timbrado",
+    form: `
+            
+  <form id="extra_job_timbrado_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Pasta para documentos",
+    form: `
+            
+  <form id="extra_job_pasta_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Envelope",
+    form: `
+            
+  <form id="extra_job_envelope_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Rótulo",
+    form: `
+            
+  <form id="extra_job_rotulo_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Caderno/Agenda",
+    form: `
+            
+  <form id="extra_job_caderno_agenda_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Embalagens",
+    form: `
+            
+  <form id="extra_job_embalagens_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Banner digital",
+    form: `
+            
+  <form id="extra_job_banner_digital_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "eBook",
+    form: `
+            
+  <form id="extra_job_ebook_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Catálogo/Cardápio",
+    form: `
+            
+  <form id="extra_job_catalog_cardapio_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Adesivo",
+    form: `
+            
+  <form id="extra_job_adesivo_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+  {
+    name: "Oudoor",
+    form: `
+            
+  <form id="extra_job_outdoor_form" action="">
+    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+        `,
+  
+  },
+]
