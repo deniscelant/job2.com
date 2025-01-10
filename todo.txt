@@ -47,6 +47,9 @@ TAREFAS:
     Identificar o clique do produto (id do botão personalizado; o id ficará no objeto jobs)
     Após identificação do produto clicado, substituir todas as informações (nome do projeto, slogan, descrição, preços, formulários)
     Armazenar as escolhas de personalização do projeto num ARRAY = PLUS_JOBS
+    
+    --------PROBLEMA A RESOLVER------------
+    Quando um id do array jobs for identificado por um botão, retornar o objeto correspondente ao id
 //
 - PERSONALIZAÇÃO
 //
