@@ -1,4 +1,4 @@
-import { jobs } from "./db.js";
+import { jobs, extra_jobs } from "./db.js";
 
 const catalog = document.getElementById("catalog");
 const briefingForm = document.getElementById("briefingForm");
@@ -11,6 +11,9 @@ const p_button = document.getElementsByClassName("p_button");
 
 if (document.title === "Home") {
   renderCatalog();
+}
+if (document.title === "Personalizar job") {
+  renderExtraJobs()
 }
 if (document.title != "Home") {
   storageInfo();
@@ -61,19 +64,19 @@ function storageInfo() {
     id.innerHTML = localStorage.getItem("job_desc");
   });
   Array.from(tm_price).forEach((id) => {
-    id.innerHTML = localStorage.getItem("job_price");
+    id.innerHTML = "a partir de " + localStorage.getItem("job_price");
   });
 }
 
-// for (let button of p_button) {
-//   button.onclick = (e) => {
-//     const target = e.target.getAttribute("id");
-//     const clicked_button = target;
+function renderExtraJobs(){
+  const listaExtra = document.getElementById("listaExtra")
+  extra_jobs.forEach((extrajob) => {
+    const extrajobRender = document.createElement("div");
+    listaExtra.appendChild(extrajobRender);
 
-//     let idJobs = jobs.map((job) => job.id);
-
-//     if (clicked_button === idJobs) {
-//       changeInfo(tm_tittle, clicked_button);
-//     }
-//   };
-// }
+    extrajobRender.innerHTML =
+      `
+        <li>${extrajob.name}</li>
+      `;
+  });
+}

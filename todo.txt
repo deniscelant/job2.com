@@ -50,6 +50,10 @@ TAREFAS:
     
     --------PROBLEMA RESOLVIDO------------
     Quando um id do array jobs for identificado por um botão, retornar o objeto correspondente ao id
+
+    --------PROBLEMA ENCONTRADO------------
+    Pensar um jeito de criar um sistema automatizado de identificação da pagina atual, para que as funções que só podem ser chamadas em paginas específicas, sejam chamadas automaticamente, se o uso exessivo de ifs.
+
 //
 - PERSONALIZAÇÃO
 //
