@@ -8,12 +8,15 @@ const tm_desc = document.getElementsByClassName("tm_desc");
 const tm_price = document.getElementsByClassName("tm_price");
 const tm_image = document.getElementsByClassName("tm_image");
 const p_button = document.getElementsByClassName("p_button");
+let PLUS_JOBS = [];
+const listaExtra = document.getElementById("listaExtra");
+
 
 if (document.title === "Home") {
   renderCatalog();
 }
 if (document.title === "Personalizar job") {
-  renderExtraJobs()
+  renderExtraJobs();
 }
 if (document.title != "Home") {
   storageInfo();
@@ -68,15 +71,34 @@ function storageInfo() {
   });
 }
 
-function renderExtraJobs(){
-  const listaExtra = document.getElementById("listaExtra")
+function renderExtraJobs() {
   extra_jobs.forEach((extrajob) => {
     const extrajobRender = document.createElement("div");
     listaExtra.appendChild(extrajobRender);
 
-    extrajobRender.innerHTML =
-      `
+    extrajobRender.innerHTML = `
         <li class="listaExtraItems">${extrajob.name}</li>
       `;
   });
+}
+
+const listaExtraItems = document.getElementsByClassName("listaExtraItems");
+for (let list of listaExtraItems) {
+  list.onclick = () => {
+    localStorage.setItem("listName", list.textContent)
+    const listName = localStorage.getItem("listName")
+    PLUS_JOBS.push(listName)
+    list.remove()
+    list.style.backgroundColor = "white";
+    list.style.color = " rgb(41, 41, 206)";
+    list.style.border = "solid 1px rgb(41, 41, 206)";
+    console.log(PLUS_JOBS)
+
+    const reset = document.createElement("button")
+    listaExtra.appendChild(reset)
+    reset.innerHTML = "Limpar"
+
+    
+  };
+
 }
