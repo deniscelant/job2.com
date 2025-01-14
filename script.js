@@ -82,23 +82,30 @@ function renderExtraJobs() {
   });
 }
 
+
 const listaExtraItems = document.getElementsByClassName("listaExtraItems");
+
 for (let list of listaExtraItems) {
-  list.onclick = () => {
-    localStorage.setItem("listName", list.textContent)
-    const listName = localStorage.getItem("listName")
-    PLUS_JOBS.push(listName)
-    list.remove()
-    list.style.backgroundColor = "white";
-    list.style.color = " rgb(41, 41, 206)";
-    list.style.border = "solid 1px rgb(41, 41, 206)";
-    console.log(PLUS_JOBS)
-
-    const reset = document.createElement("button")
-    listaExtra.appendChild(reset)
-    reset.innerHTML = "Limpar"
-
+    list.onclick = () => {
+      localStorage.setItem("listName", list.textContent)
+      const listName = localStorage.getItem("listName")
+      PLUS_JOBS.push(listName)
+      list.remove()
+      list.style.backgroundColor = "white";
+      list.style.color = " rgb(41, 41, 206)";
+      list.style.border = "solid 1px rgb(41, 41, 206)";
+      const reset = document.createElement("button")
+      if(PLUS_JOBS.length == 1 && reset.innerHTML === "" ){
+        listaExtra.appendChild(reset)
+        reset.innerHTML = "Limpar"
+        reset.onclick = () => {
+          PLUS_JOBS.splice(0, PLUS_JOBS.length)
+          reset.remove()
+        }
+      }
+      console.log(PLUS_JOBS)
+      
+    };
     
-  };
-
-}
+  }
+ 
