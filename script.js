@@ -76,7 +76,7 @@ function renderExtraJobs(){
 
     extrajobRender.innerHTML =
       `
-        <li>${extrajob.name}</li>
+        <li class="listaExtraItems">${extrajob.name}</li>
       `;
   });
 }

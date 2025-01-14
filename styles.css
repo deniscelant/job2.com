@@ -188,3 +188,17 @@ button {
     border: solid rgb(41, 41, 206) 3px;
 
 }
+
+#listaExtra li{
+    list-style: none;
+}
+
+.listaExtraItems{
+    background-color: rgb(27, 27, 172);
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+
+}
