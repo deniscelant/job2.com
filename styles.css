@@ -202,3 +202,15 @@ button {
     border-radius: 50px;
 
 }
+
+.listMarked{
+    background-color:  white;
+    color:  rgb(27, 27, 172);
+    border: solid 1px rgb(41, 41, 206) 3px;
+
+}
+.listUnmarked{
+    background-color:   rgb(27, 27, 172);
+    color:  white;
+
+}

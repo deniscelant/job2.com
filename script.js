@@ -1,4 +1,5 @@
 import { jobs, extra_jobs } from "./db.js";
+import * as style from "./style.js";
 
 const catalog = document.getElementById("catalog");
 const briefingForm = document.getElementById("briefingForm");
@@ -86,20 +87,25 @@ function renderExtraJobs() {
 const listaExtraItems = document.getElementsByClassName("listaExtraItems");
 
 for (let list of listaExtraItems) {
+  list.classList.add("listUnmarked")
     list.onclick = () => {
-      localStorage.setItem("listName", list.textContent)
-      const listName = localStorage.getItem("listName")
+      if(list.className === "listUnmarked"){
+        list.classList.replace("listUnmarked", "listMarked")
+        console.log("mudou para marcado")
+      }
+      if(list.className === "listMarked"){
+        list.classList.replace("listMarked", "listUnmarked")
+        console.log("mudou para desmarcado")
+
+      }
+      const listName = list.textContent
       PLUS_JOBS.push(listName)
-      list.remove()
-      list.style.backgroundColor = "white";
-      list.style.color = " rgb(41, 41, 206)";
-      list.style.border = "solid 1px rgb(41, 41, 206)";
       const reset = document.createElement("button")
       if(PLUS_JOBS.length == 1 && reset.innerHTML === "" ){
         listaExtra.appendChild(reset)
         reset.innerHTML = "Limpar"
         reset.onclick = () => {
-          PLUS_JOBS.splice(0, PLUS_JOBS.length)
+          PLUS_JOBS.length = 0;
           reset.remove()
         }
       }
