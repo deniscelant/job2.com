@@ -83,35 +83,41 @@ function renderExtraJobs() {
   });
 }
 
-
 const listaExtraItems = document.getElementsByClassName("listaExtraItems");
+Array.from(listaExtraItems).forEach(element => {
+    element.classList.add("listUnmarked")
+});
 
 for (let list of listaExtraItems) {
-  list.classList.add("listUnmarked")
-    list.onclick = () => {
-      if(list.className === "listUnmarked"){
-        list.classList.replace("listUnmarked", "listMarked")
-        console.log("mudou para marcado")
-      }
-      if(list.className === "listMarked"){
-        list.classList.replace("listMarked", "listUnmarked")
-        console.log("mudou para desmarcado")
+  
+  list.onclick = () => {
 
-      }
-      const listName = list.textContent
+    const listName = list.textContent
+    if (list.classList.contains("listUnmarked")) {
+      list.classList.replace( "listUnmarked", "listMarked")
+      console.log("mudou para marcado")
       PLUS_JOBS.push(listName)
-      const reset = document.createElement("button")
-      if(PLUS_JOBS.length == 1 && reset.innerHTML === "" ){
-        listaExtra.appendChild(reset)
-        reset.innerHTML = "Limpar"
-        reset.onclick = () => {
-          PLUS_JOBS.length = 0;
-          reset.remove()
-        }
+
+    }
+    else if (list.classList.contains("listMarked")) {
+      list.classList.replace( "listMarked","listUnmarked")
+      console.log("mudou para desmarcado")
+
+    }
+
+    const reset = document.createElement("button")
+
+    if (PLUS_JOBS.length == 1 && reset.innerHTML === "") {
+      listaExtra.appendChild(reset)
+      reset.innerHTML = "Limpar"
+      reset.onclick = () => {
+        PLUS_JOBS.length = 0;
+        reset.remove()
       }
-      console.log(PLUS_JOBS)
-      
-    };
-    
-  }
- 
+    }
+    console.log(PLUS_JOBS)
+
+  };
+
+}
+
