@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <header>
+      <div id="logo">
+        <h1>
+          MyMediaKit
+          <span
+            style="color: rgb(41, 41, 206); font-size: 14px; font-weight: 200"
+            >online</span
+          >
+        </h1>
+      </div>
+      <div id="headerMenu">
+        <a href="">Como funciona?</a>
+        <a href="">Produtos</a>
+        <a href="">Monte um projeto</a>
+        <a href="">Contato</a>
+        <a href="">A empresa</a>
+      </div>
+      <div id="searchBox">
+        <input
+          type="text"
+          id="search"
+          placeholder="Manual de marca, impressos e muito mais!"
+        />
+        <button id="searchIcon">Pesquisar</button>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div id="logo">
-      <h1>MyMediaKit <span style="color:  rgb(41, 41, 206); font-size: 14px; font-weight: 200;">online</span></h1>
-    </div>
-    <div id="headerMenu">  
-      <a href="">Como funciona?</a>
-      <a href="">Produtos</a>
-      <a href="">Monte um projeto</a>
-      <a href="">Contato</a>
-      <a href="">A empresa</a>
-    </div>
-    <div id="searchBox">
-      <input type="text" id="search" placeholder="Manual de marca, impressos e muito mais!">
-      <button id="searchIcon">Pesquisar</button>
-    </div>
-  </header>
+    <section id="hero">
+      <div id="heroOne">
+        <h1>Uma marca, diversos canais. Em diversas formas.</h1>
+        <h4>Expanda, padronize e comunique-se livrevemente.</h4>
+        <button id="tutorialBtn">Onde começo?</button>
+      </div>
 
-  <section id="hero">
-    <div id="heroOne">
-      <h1>Uma marca, diversos canais. Em diversas formas.</h1>
-      <h4>Expanda, padronize e comunique-se livrevemente.</h4>
-      <button id="tutorialBtn">Onde começo?</button>
-    </div>
+      <div id="heroTwo">
+        <h4>
+          Conheça os produtos de design da (nome da marca) e expanda seu
+          negócio.
+        </h4>
+        <img id="mockupHero" src="mood mockups mko.png" alt="mockups" />
+      </div>
+    </section>
 
-    <div id="heroTwo">
-      <h4>Conheça os produtos de design da (nome da marca) e expanda seu negócio.</h4>
-      <img id="mockupHero" src="mood mockups mko.png" alt="mockups">
-    </div>
-  </section>
+    <section id="tutorial">
+      <h1 style="color: white">Como funciona?</h1>
+      <br>
+      <ul id="tutorialList">
+        <li>
+          <i class="fa-solid fa-cube"></i> Escolha o pacote ou material a ser
+          desenvolvido.
+        </li>
+        <li>
+          <i class="fa-solid fa-circle-plus"></i>Adicione materiais extras ao
+          seu projeto (opcional).
+        </li>
+        <li>
+          <i class="fa-solid fa-rectangle-list"></i>Preencha um formulário com
+          os detalhes do projetos ou fale com um especialista
+        </li>
+        <li>
+          <i class="fa-solid fa-file"></i>Após o briefing. Envie os materiais da
+          sua marca
+        </li>
 
-  <section id="tutorial">
-    <h1 style="color: white;">Como funciona?</h1>
-    <ul id="tutorialList">
-      <li>Escolha o pacote ou material a ser desenvolvido
-        Seja um social media ou criação de logotipo.
-        Tenha acesso a um catalogo de soluções de design para a expansão do seu negócio.</li>
-      <li>Liste o que você precisa no rascunho do projeto
-          
-        - Cartao de visita
-        - Flyer
-        - Catálogo
-        -  + Logotipo</li>
-      <li>Preencha um formulário com os detalhes do projetos
-        ou
-        fale com um especialista</li>
-      <li>Após o briefing. Envie os materiais da sua marca
+        <li>
+          <i class="fa-solid fa-cart-shopping"></i>Acompanhe o orçamento e faça
+          o pagamento conforme condições
+        </li>
+        <li>
+          <i class="fa-solid fa-table-columns"></i>Acompanhe tudo pelo dashboard
+        </li>
+      </ul>
+    </section>
 
-        logotipo, manual de marca e demais materiais importantes para o desenvolvimento do projeto</li>
-      <li>Acompanhe o orçamento e faça o pagamento conforme condições</li>
-      <li>Acompanhe tudo pelo dashboard
-
-        veja o progresso
-        edite, adicione ou cancele o projeto</li>
-    </ul>
-  </section>
-
-  <section id="catalog">
-    <h1>Catálogo</h1>
-    <!-- <div id="productCatalog">
+    <h1>Catálogo </h1>
+    <section id="catalog">
+      <!-- <div id="productCatalog">
       <div id="infoProduct">
         <h1>Nome do produto</h1>
         <h4>Descrição do produto</h4>
@@ -76,47 +93,62 @@
       </div>
       <div id="imgCatalog"></div>
     </div> -->
-  </section>
+    </section>
 
-  <section id="portfolio">
-    <h1>Conheça os clientes que investiram no nosso trabalho.</h1>
-    <div id="gridPortfolio">
-      <div class="gridPortfolioCard"></div>
-      <div class="gridPortfolioCard"></div>
-      <div class="gridPortfolioCard"></div>
-      <div class="gridPortfolioCard"></div>
-      <div class="gridPortfolioCard"></div>
-    </div>
-  </section>
+    <section id="portfolio">
+      <h1>Conheça os clientes que investiram no nosso trabalho.</h1>
+      <div id="gridPortfolio">
+        <div class="gridPortfolioCard"></div>
+        <div class="gridPortfolioCard"></div>
+        <div class="gridPortfolioCard"></div>
+        <div class="gridPortfolioCard"></div>
+        <div class="gridPortfolioCard"></div>
+      </div>
+    </section>
 
-  <section id="contato">
-    <h1>Quer fazer um projeto conversando pessoalmente com um especialista, ou precisa tirar alguma dúvida?</h1>
-    <h3>Preencha o formulário de contato!</h3>
-    <form action="">
-      <label for="contact_form_name">Nome completo<input type="text" id="contact_form_name" placeholder="Meu nome completo"></label>
-      <label for="contact_form_mail">Email<input type="email" id="contact_form_mail" placeholder="meu@email.com"></label>
-      <label for="contact_form_tel">Telefone ou celular<input type="text" id="contact_form_tel" placeholder="insira seu DDD + número"></label>
-      <button type="submit">Enviar</button>
-    </form>
-    
-  </section>
+    <section id="contato">
+      <h1>
+        Quer fazer um projeto conversando pessoalmente com um especialista, ou
+        precisa tirar alguma dúvida?
+      </h1>
+      <h3>Preencha o formulário de contato!</h3>
+      <form action="">
+        <label for="contact_form_name"
+          >Nome completo<input
+            type="text"
+            id="contact_form_name"
+            placeholder="Meu nome completo"
+        /></label>
+        <label for="contact_form_mail"
+          >Email<input
+            type="email"
+            id="contact_form_mail"
+            placeholder="meu@email.com"
+        /></label>
+        <label for="contact_form_tel"
+          >Telefone ou celular<input
+            type="text"
+            id="contact_form_tel"
+            placeholder="insira seu DDD + número"
+        /></label>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-  <footer>
-    <a href="">FB</a>
-    <a href="">IG</a>
-    <a href="">LK</a>
-    <a href="">X</a>
-    <a href="">Política de privacidade</a>
-    <a href="">Sobre nós</a>
-    <a href="">Trabalhe conosco</a>
-    <a href="">55 45 9 9989 8148</a>
-  </footer>
-  <script src="script.js" type="module"></script>
-
-  
- 
-</body>
-
-
-
+    <footer>
+      <a href="">FB</a>
+      <a href="">IG</a>
+      <a href="">LK</a>
+      <a href="">X</a>
+      <a href="">Política de privacidade</a>
+      <a href="">Sobre nós</a>
+      <a href="">Trabalhe conosco</a>
+      <a href="">55 45 9 9989 8148</a>
+    </footer>
+    <script src="script.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/19c3d16ccc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -126,46 +126,65 @@ button {
 }
 
 #tutorial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(41, 41, 206);
     width: 100%;
+    padding: 50px 0 50px 0;
     text-align: center;
-    height: 100px;
-    color: white;
-    padding: 100px 0 100px 0;
 }
 
 #tutorialList {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-self: center;
     text-align: center;
-    gap: 35px;
-    font-size: 14px;
+    gap: 45px;
+    font-size: 10px;
     font-weight: 400;
-    width: 1400px;
     list-style-type: none;
 }
 
 #tutorialList li{
-    background-color:  rgb(27, 27, 172);
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 130px;
+    height: 100px;
     border-radius: 15px;
     color:  rgb(255, 255, 255);
 }
 
+
 #productCatalog {
     max-width: 500px;
-    border: solid rgb(41, 41, 206) 3px;
+    border: solid 2px rgb(41, 41, 206) ;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     gap: 40px;
     color: rgb(10, 10, 50);
+    height: 300px;
+    text-align: left;
+    padding-bottom: 10px;
 
+}
+
+#productCatalog i{
+    padding: 10px 0 10px 10px;
+    transform: scale(2.5);
+
+}
+
+/* .catalogRender{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+} */
+
+#catalog{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    padding: 50px 0 50px 0;
+    gap: 50px;
 }
 
 #infoProduct {
@@ -221,4 +240,8 @@ button {
     padding: 15px 10px 15px 10px;
     border-radius: 50px;
     text-align: center;
+}
+
+.fa-solid{
+    transform: scale(3.0);
 }

@@ -3,6 +3,7 @@ export const jobs = [
     id: "brand",
     name: "BrandBook",
     slogan: "Crie marcas memoráveis e aplique-as nos seus materiais de marketing!",
+    icon: "fa-solid fa-book",
     desc: `
     <h1>O que será entregue no BrandBook?</h1>
     <ul>
@@ -33,6 +34,7 @@ export const jobs = [
   {
     id: "print",
     name: "Printed Pack",
+    icon: "fa-solid fa-map",
     slogan: "Crie materiais gráficos para seu escritório ou para seu ponto de venda!",
     desc: 
     `
@@ -65,6 +67,7 @@ export const jobs = [
   {
     id: "web",
     name: "Web Pack",
+    icon: "fa-solid fa-desktop",
     slogan: "Crie seu site institucional ou uma página de vendas!",
     desc: 
     `
@@ -81,6 +84,7 @@ export const jobs = [
   {
     id: "media",
     name: "Media Pack",
+    icon: "fa-solid fa-paper-plane",
     slogan: "Faça seu feed ter mais engajamento e converta mais clientes com criativos de conversão!",
     desc: 
     `
@@ -96,6 +100,7 @@ export const jobs = [
   },
   {
     id: "visual",
+    icon: "fa-solid fa-video",
     name: "Visual Pack",
     slogan: "Crie vídeos ou animações profissionais para apresentar seu produtos!",
     desc: 
@@ -113,7 +118,7 @@ export const jobs = [
 
 export const forms = [
   {
-    name: "brandbook",
+    name: "BrandBook",
     form: `
             
   <form id="printed_pack_form" action="">
@@ -124,7 +129,7 @@ export const forms = [
         `,
   },
   {
-    name: "printed_pack",
+    name: "Printed Pack",
     form: `
             
   <form id="printed_pack_form" action="">
@@ -135,7 +140,7 @@ export const forms = [
         `,
   },
   {
-    name: "web_pack",
+    name: "Web Pack",
     form: `
             
   <form id="web_pack_form" action="">
@@ -146,7 +151,7 @@ export const forms = [
         `,
   },
   {
-    name: "media_pack",
+    name: "Media Pack",
     form: `
             
   <form id="media_pack_form" action="">
@@ -157,7 +162,7 @@ export const forms = [
         `,
   },
   {
-    name: "visual_pack",
+    name: "Visual Pack",
     form: `
             
   <form id="visual_pack_form" action="">
