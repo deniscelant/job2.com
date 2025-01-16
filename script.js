@@ -97,6 +97,7 @@ for (let list of listaExtraItems) {
       list.classList.replace( "listUnmarked", "listMarked")
       console.log("mudou para marcado")
       PLUS_JOBS.push(listName)
+      list.style.display = "none"
 
     }
     else if (list.classList.contains("listMarked")) {
@@ -113,6 +114,12 @@ for (let list of listaExtraItems) {
       reset.onclick = () => {
         PLUS_JOBS.length = 0;
         reset.remove()
+        Array.from(listaExtraItems).forEach(element => {
+          element.classList.replace( "listMarked","listUnmarked")
+      
+      });
+      list.style.display = "inherit"
+
       }
     }
     console.log(PLUS_JOBS)

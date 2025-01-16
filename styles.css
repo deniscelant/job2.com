@@ -206,7 +206,7 @@ button {
 .listMarked{
     background-color:  white;
     color:  rgb(27, 27, 172);
-    border: solid 1px rgb(41, 41, 206) 3px;
+    border: solid 1px rgb(41, 41, 206);
     margin-bottom: 15px;
     padding: 15px 10px 15px 10px;
     border-radius: 50px;
@@ -221,5 +221,4 @@ button {
     padding: 15px 10px 15px 10px;
     border-radius: 50px;
     text-align: center;
-
 }
