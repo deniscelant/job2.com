@@ -24,7 +24,7 @@ header a{
 }
 
 header input{
-    border: solid rgb(41, 41, 206) 2px;
+    border: solid #2929ce 2px;
     border-radius: 5px;
     padding: 5px;
     width: 200px;
@@ -41,6 +41,7 @@ h1 {
     font-family: "Parkinsans", serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 38px;
     color: rgb(50, 10, 50);
 
 }
@@ -126,6 +127,7 @@ button {
 }
 
 #tutorial {
+    
     background-color: rgb(41, 41, 206);
     width: 100%;
     padding: 50px 0 50px 0;
@@ -139,7 +141,6 @@ button {
     justify-self: center;
     text-align: center;
     gap: 45px;
-    font-size: 10px;
     font-weight: 400;
     list-style-type: none;
 }
@@ -148,11 +149,12 @@ button {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 130px;
+    width: 200px;
     height: 100px;
     border-radius: 15px;
     color:  rgb(255, 255, 255);
 }
+
 
 
 #productCatalog {
