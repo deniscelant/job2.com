@@ -39,7 +39,7 @@ header input{
 
 h1 {
     font-family: "Parkinsans", serif;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     font-size: 38px;
     color: rgb(50, 10, 50);
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
     font-family: "Parkinsans", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     color: rgb(10, 10, 50);
 
@@ -115,7 +115,6 @@ button {
     align-items: start;
     gap: 50px;
     width: 1000px;
-    padding: 50px 0 50px 0;
 
 }
 
@@ -140,20 +139,13 @@ button {
     align-items: center;
     justify-self: center;
     text-align: center;
-    gap: 45px;
     font-weight: 400;
     list-style-type: none;
+    color: white;
+    font-size: 12px;
 }
 
-#tutorialList li{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 200px;
-    height: 100px;
-    border-radius: 15px;
-    color:  rgb(255, 255, 255);
-}
+
 
 
 
@@ -177,10 +169,6 @@ button {
 
 }
 
-/* .catalogRender{
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
-} */
 
 #catalog{
     display: grid;
@@ -246,18 +234,17 @@ button {
 
 .fa-solid{
     transform: scale(3.0);
+    padding-bottom: 15px;
+
 }
 
 .portfolioDiv{
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    padding: 50px 0 50px 0;
+    grid-template-columns: 200px 200px 200px;
     gap: 50px;
+    width: 100%;
 }
 
 .portfolioImageDiv{
-    width: 400px;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+    width: 200px;
 }
