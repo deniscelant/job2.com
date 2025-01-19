@@ -1,4 +1,4 @@
-import { jobs, extra_jobs, forms } from "./db.js";
+import { jobs, extra_jobs, forms, portfolio } from "./db.js";
 import * as style from "./style.js";
 
 const catalog = document.getElementById("catalog");
@@ -11,6 +11,7 @@ const tm_image = document.getElementsByClassName("tm_image");
 const p_button = document.getElementsByClassName("p_button");
 let PLUS_JOBS = [];
 const listaExtra = document.getElementById("listaExtra");
+const portfolioDiv = document.getElementById("portfolioDiv");
 
 
 if (document.title === "Home") {
@@ -24,6 +25,9 @@ if (document.title != "Home") {
 }
 if (document.title === "Formulário ou contato") {
   renderForm();
+}
+if (document.title === "Home") {
+  renderPortfolio();
 }
 
 function renderCatalog() {
@@ -143,4 +147,14 @@ function renderForm(){
       `
     }
   })
+}
+
+function renderPortfolio(){
+  portfolio.forEach((job) => {
+    const portfolioJob = document.createElement("img");
+    portfolioJob.classList.add("portfolioImageDiv")
+    portfolioDiv.appendChild(portfolioJob);
+
+    portfolioJob.src = job;
+  });
 }

@@ -365,5 +365,13 @@ export const extra_jobs = [
 ]
 
 export const portfolio = [
-  
+  "portfolio/BC-Apresentação-SaqueRápido-AC030724-12.png",
+  "portfolio/brand7&Co_apresentação_redesign_celantdg-12.png",
+  "portfolio/Camisa-Polo-Masculino-01.png",
+  "portfolio/capa-alfagaming copiar 2.png",
+  "portfolio/DND-RedesSociais-Maio-Card-01-AC250424.png",
+  "portfolio/DND-RedesSociais-Maio-Card-03-AC250424.png",
+  "portfolio/job Zanom_14.png",
+  "portfolio/job Zanom_16.png",
+  "portfolio/Manual de marca Moldar pré-moldados_Mockup 01.png",
 ]
