@@ -42,7 +42,7 @@ h1 {
     font-weight: 600;
     font-style: normal;
     font-size: 38px;
-    color: rgb(50, 10, 50);
+    color: #1b1b8a;
 
 }
 
@@ -50,7 +50,7 @@ h2 {
     font-family: "Parkinsans", serif;
     font-weight: 500;
     font-style: normal;
-    color: rgb(10, 10, 50);
+    color: rgb(48, 48, 48);
 
 }
 
@@ -58,7 +58,7 @@ h3 {
     font-family: "Parkinsans", serif;
     font-weight: 600;
     font-style: normal;
-    color: rgb(10, 10, 50);
+    color: rgb(48, 48, 48);
 
 }
 
@@ -66,7 +66,7 @@ h4 {
     font-family: "Parkinsans", serif;
     font-weight: 600;
     font-style: normal;
-    color: rgb(10, 10, 50);
+    color: rgb(48, 48, 48);
 
 }
 
@@ -78,6 +78,12 @@ p {
 }
 
 ul {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
     font-family: "Parkinsans", serif;
     font-weight: 400;
     font-style: normal;
@@ -98,7 +104,7 @@ input {
 }
 
 button {
-    background-color: rgb(41, 41, 206);
+    background-color: #2929ce;
     font-family: "Parkinsans", serif;
     font-weight: 600;
     font-style: normal;
@@ -114,40 +120,54 @@ button {
     flex-direction: row;
     align-items: start;
     gap: 50px;
-    width: 1000px;
-
+    padding: 50px 300px 50px 300px;
 }
 
 #hero h1{
     font-size: 38px;
 }
+
+#hero h4{
+    font-weight: 500;
+    font-size: 20px;
+}
 #mockupHero{
-    width: 500px;
+    width: 900px;
 }
 
 #tutorial {
-    
-    background-color: rgb(41, 41, 206);
-    width: 100%;
-    padding: 50px 0 50px 0;
-    text-align: center;
-}
-
-#tutorialList {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(238, 238, 238);
+    color: rgb(24, 24, 24);
     text-align: center;
-    font-weight: 400;
-    list-style-type: none;
-    color: white;
-    font-size: 12px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 14px;
 }
 
+#tutorial h1{
+    font-size: 24px;
+    color:  rgb(24, 24, 24);
+}
 
+#tutorial ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-
+#tutorial i{
+    transform: scale(1.5);
+    padding-right: 15px;
+}
 
 #productCatalog {
     max-width: 500px;
@@ -233,9 +253,7 @@ button {
 }
 
 .fa-solid{
-    transform: scale(3.0);
     padding-bottom: 15px;
-
 }
 
 .portfolioDiv{
