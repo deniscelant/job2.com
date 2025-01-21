@@ -1,4 +1,4 @@
-import { jobs, extra_jobs, forms, portfolio } from "./db.js";
+import { jobs, extra_jobs, forms } from "./db.js";
 import * as style from "./style.js";
 
 const catalog = document.getElementById("catalog");
@@ -39,12 +39,12 @@ function renderCatalog() {
     catalogRender.innerHTML = `
           <div id="productCatalog">
           <div id="infoProduct">
-            <i class="${job.icon}"></i>
               <h1>${job.name}</h1>
               <h4>${job.slogan}</h4>
               <h3>a partir de R$${job.price}</h3>
               <a href="pagina-produto.html"><button class="p_button" id = "${job.id}">Começar</button></a>
-          </div>
+              </div>
+              <img id="imgCatalog" src="${job.image}">
           </div>
               `;
   });

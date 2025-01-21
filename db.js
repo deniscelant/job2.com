@@ -3,7 +3,7 @@ export const jobs = [
     id: "brand",
     name: "BrandBook",
     slogan: "Crie marcas memoráveis e aplique-as nos seus materiais de marketing!",
-    icon: "fa-solid fa-book",
+    image: "mockups/__brand.png",
     desc: `
     <h1>O que será entregue no BrandBook?</h1>
     <ul>
@@ -34,7 +34,7 @@ export const jobs = [
   {
     id: "print",
     name: "Printed Pack",
-    icon: "fa-solid fa-map",
+    image: "mockups/__print.png",
     slogan: "Crie materiais gráficos para seu escritório ou para seu ponto de venda!",
     desc: 
     `
@@ -67,7 +67,7 @@ export const jobs = [
   {
     id: "web",
     name: "Web Pack",
-    icon: "fa-solid fa-desktop",
+    image: "mockups/__web.png",
     slogan: "Crie seu site institucional ou uma página de vendas!",
     desc: 
     `
@@ -84,7 +84,7 @@ export const jobs = [
   {
     id: "media",
     name: "Media Pack",
-    icon: "fa-solid fa-paper-plane",
+    image: "mockups/__media.png",
     slogan: "Faça seu feed ter mais engajamento e converta mais clientes com criativos de conversão!",
     desc: 
     `
@@ -100,7 +100,7 @@ export const jobs = [
   },
   {
     id: "visual",
-    icon: "fa-solid fa-video",
+    image: "mockups/__visual.png",
     name: "Visual Pack",
     slogan: "Crie vídeos ou animações profissionais para apresentar seu produtos!",
     desc: 
@@ -364,14 +364,3 @@ export const extra_jobs = [
   },
 ]
 
-export const portfolio = [
-  "portfolio/BC-Apresentação-SaqueRápido-AC030724-12.png",
-  "portfolio/brand7&Co_apresentação_redesign_celantdg-12.png",
-  "portfolio/Camisa-Polo-Masculino-01.png",
-  "portfolio/capa-alfagaming copiar 2.png",
-  "portfolio/DND-RedesSociais-Maio-Card-01-AC250424.png",
-  "portfolio/DND-RedesSociais-Maio-Card-03-AC250424.png",
-  "portfolio/job Zanom_14.png",
-  "portfolio/job Zanom_16.png",
-  "portfolio/Manual de marca Moldar pré-moldados_Mockup 01.png",
-]
