@@ -26,9 +26,9 @@ if (document.title != "Home") {
 if (document.title === "Formulário ou contato") {
   renderForm();
 }
-if (document.title === "Home") {
-  renderPortfolio();
-}
+// if (document.title === "Home") {
+//   renderPortfolio();
+// }
 
 function renderCatalog() {
   jobs.forEach((job) => {
@@ -149,12 +149,12 @@ function renderForm(){
   })
 }
 
-function renderPortfolio(){
-  portfolio.forEach((job) => {
-    const portfolioJob = document.createElement("img");
-    portfolioJob.classList.add("portfolioImageDiv")
-    portfolioDiv.appendChild(portfolioJob);
+// function renderPortfolio(){
+//   portfolio.forEach((job) => {
+//     const portfolioJob = document.createElement("img");
+//     portfolioJob.classList.add("portfolioImageDiv")
+//     portfolioDiv.appendChild(portfolioJob);
 
-    portfolioJob.src = job;
-  });
-}
+//     portfolioJob.src = job;
+//   });
+// }
