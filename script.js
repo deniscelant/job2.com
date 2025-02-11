@@ -153,7 +153,8 @@ function renderForm(){
 
 function calcBudget(){
   const newPlusJob = PLUS_JOBS.map((str) => str.replace(/\D/g, ''))
-  const somPlusJob = newPlusJob.forEach((e) => e + e)
+  let num = 0
+  newPlusJob.forEach(job => job += num)
   // budget.textContent = PLUS_JOBS
   console.log(somPlusJob)
 
