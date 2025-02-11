@@ -121,7 +121,7 @@ export const forms = [
     name: "BrandBook",
     form: `
             
-  <form id="printed_pack_form" action="">
+  <form id="printed_pack_form" action="pagamento.html">
     <label for="q1">Descreva em detalhes, como você gostaria que o seu brandbook fosse feito. Se quiser, fale sobre
         referências que tem em mente.</label><textarea></textarea>
     <button type="submit">Enviar</button>
@@ -132,7 +132,7 @@ export const forms = [
     name: "Printed Pack",
     form: `
             
-  <form id="printed_pack_form" action="">
+  <form id="printed_pack_form" action="pagamento.html">
     <label for="q1">Descreva em detalhes, como você gostaria que o material gráfico fosse feito. Se quiser, fale sobre
         referências que tem em mente.</label><textarea></textarea>
     <button type="submit">Enviar</button>
@@ -143,7 +143,7 @@ export const forms = [
     name: "Web Pack",
     form: `
             
-  <form id="web_pack_form" action="">
+  <form id="web_pack_form" action="pagamento.html">
     <label for="q1">Descreva em detalhes, como você gostaria que o site ou landing page fosse feito. Se quiser, fale sobre
         referências que tem em mente.</label><textarea></textarea>
     <button type="submit">Enviar</button>
@@ -154,7 +154,7 @@ export const forms = [
     name: "Media Pack",
     form: `
             
-  <form id="media_pack_form" action="">
+  <form id="media_pack_form" action="pagamento.html">
     <label for="q1">Descreva em detalhes, como você gostaria que as artes fossem feitas. Se quiser, fale sobre
         referências que tem em mente.</label><textarea></textarea>
     <button type="submit">Enviar</button>
@@ -165,7 +165,7 @@ export const forms = [
     name: "Visual Pack",
     form: `
             
-  <form id="visual_pack_form" action="">
+  <form id="visual_pack_form" action="pagamento.html">
     <label for="q1">Descreva em detalhes, como você gostaria que o material gráfico fosse feito. Se quiser, fale sobre
         referências que tem em mente.</label><textarea></textarea>
     <button type="submit">Enviar</button>
@@ -177,6 +177,7 @@ export const forms = [
 export const extra_jobs = [
   {
     name: "logo",
+    price: 650,
     form: `
             
   <form id="extra_job_logo_form" action="">
@@ -188,6 +189,7 @@ export const extra_jobs = [
   },
   {
     name: "Arte para feed/story",
+    price: 50,
     form: `
             
   <form id="extra_job_arte_media_form" action="">
@@ -199,6 +201,7 @@ export const extra_jobs = [
   },
   {
     name: "Vídeo ou motion",
+    price: 100,
     form: `
             
   <form id="extra_job_video_motion_form" action="">
@@ -210,6 +213,7 @@ export const extra_jobs = [
   },
   {
     name: "Cartão de visita",
+    price: 50,
     form: `
             
   <form id="extra_job_cartao_visita_form" action="">
@@ -221,6 +225,7 @@ export const extra_jobs = [
   },
   {
     name: "Panfleto",
+    price: 50,
     form: `
             
   <form id="extra_job_panfleto_form" action="">
@@ -232,6 +237,7 @@ export const extra_jobs = [
   },
   {
     name: "Folder sanfonado",
+    price: 250,
     form: `
             
   <form id="extra_job_folder_form" action="">
@@ -243,6 +249,7 @@ export const extra_jobs = [
   },
   {
     name: "Papel timbrado",
+    price: 50,
     form: `
             
   <form id="extra_job_timbrado_form" action="">
@@ -254,6 +261,7 @@ export const extra_jobs = [
   },
   {
     name: "Pasta para documentos",
+    price: 100,
     form: `
             
   <form id="extra_job_pasta_form" action="">
@@ -265,6 +273,7 @@ export const extra_jobs = [
   },
   {
     name: "Envelope",
+    price: 250,
     form: `
             
   <form id="extra_job_envelope_form" action="">
@@ -275,7 +284,8 @@ export const extra_jobs = [
   
   },
   {
-    name: "Rótulo",
+    name: "Rótulo/Embalagem",
+    price: 150,
     form: `
             
   <form id="extra_job_rotulo_form" action="">
@@ -287,6 +297,7 @@ export const extra_jobs = [
   },
   {
     name: "Caderno/Agenda",
+    price: 250,
     form: `
             
   <form id="extra_job_caderno_agenda_form" action="">
@@ -297,18 +308,8 @@ export const extra_jobs = [
   
   },
   {
-    name: "Embalagens",
-    form: `
-            
-  <form id="extra_job_embalagens_form" action="">
-    <label for="q1">Forneça mais detalhes para esse job.</label><textarea></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-        `,
-  
-  },
-  {
     name: "Banner digital",
+    price: 250,
     form: `
             
   <form id="extra_job_banner_digital_form" action="">
@@ -320,6 +321,7 @@ export const extra_jobs = [
   },
   {
     name: "eBook",
+    price: 899,
     form: `
             
   <form id="extra_job_ebook_form" action="">
@@ -331,6 +333,7 @@ export const extra_jobs = [
   },
   {
     name: "Catálogo/Cardápio",
+    price: 899,
     form: `
             
   <form id="extra_job_catalog_cardapio_form" action="">
@@ -342,6 +345,7 @@ export const extra_jobs = [
   },
   {
     name: "Adesivo",
+    price: 50,
     form: `
             
   <form id="extra_job_adesivo_form" action="">
@@ -353,6 +357,7 @@ export const extra_jobs = [
   },
   {
     name: "Oudoor",
+    price: 250,
     form: `
             
   <form id="extra_job_outdoor_form" action="">

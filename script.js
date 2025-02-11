@@ -12,6 +12,7 @@ const p_button = document.getElementsByClassName("p_button");
 let PLUS_JOBS = [];
 const listaExtra = document.getElementById("listaExtra");
 const portfolioDiv = document.getElementById("portfolioDiv");
+const budget = document.getElementById("budget");
 
 
 if (document.title === "Home") {
@@ -86,7 +87,10 @@ function renderExtraJobs() {
     listaExtra.appendChild(extrajobRender);
 
     extrajobRender.innerHTML = `
-        <li class="listaExtraItems">${extrajob.name}</li>
+        <li class="listaExtraItems">
+          <p id="extrajobName">${extrajob.name}</p>
+          <p id="extrajobPrice" >${extrajob.price}</p>
+        </li>
       `;
   });
 }
@@ -99,7 +103,6 @@ Array.from(listaExtraItems).forEach(element => {
 for (let list of listaExtraItems) {
   
   list.onclick = () => {
-
     const listName = list.textContent
     if (list.classList.contains("listUnmarked")) {
       list.classList.replace( "listUnmarked", "listMarked")
@@ -130,8 +133,7 @@ for (let list of listaExtraItems) {
 
       }
     }
-    console.log(PLUS_JOBS)
-
+    calcBudget();
   };
 
 }
@@ -149,6 +151,14 @@ function renderForm(){
   })
 }
 
+function calcBudget(){
+  const newPlusJob = PLUS_JOBS.map((str) => str.replace(/\D/g, ''))
+  const somPlusJob = newPlusJob.forEach((e) => e + e)
+  // budget.textContent = PLUS_JOBS
+  console.log(somPlusJob)
+
+
+}
 // function renderPortfolio(){
 //   portfolio.forEach((job) => {
 //     const portfolioJob = document.createElement("img");
@@ -158,3 +168,4 @@ function renderForm(){
 //     portfolioJob.src = job;
 //   });
 // }
+

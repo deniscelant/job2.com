@@ -265,6 +265,10 @@ img:hover{
 
 }
 
+.listaExtraItems p{
+    color: white;
+}
+
 .listMarked{
     background-color:  white;
     color:  rgb(27, 27, 172);
