@@ -1,0 +1,39 @@
+
+
+#listaExtra li{
+    list-style: none;
+}
+
+.listaExtraItems{
+    background-color: rgb(27, 27, 172);
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+
+}
+
+.listaExtraItems p{
+    color: white;
+}
+
+.listMarked{
+    background-color:  white;
+    color:  rgb(27, 27, 172);
+    border: solid 1px rgb(41, 41, 206);
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 50px;
+    text-align: center;
+
+
+}
+.listUnmarked{
+    background-color:   rgb(27, 27, 172);
+    color:  white;
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 50px;
+    text-align: center;
+}
