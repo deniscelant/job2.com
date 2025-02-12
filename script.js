@@ -97,23 +97,24 @@ function renderExtraJobs() {
 
 const listaExtraItems = document.getElementsByClassName("listaExtraItems");
 Array.from(listaExtraItems).forEach(element => {
-    element.classList.add("listUnmarked")
+  element.classList.add("listUnmarked")
 });
 
 for (let list of listaExtraItems) {
-  
+
   list.onclick = () => {
+    // const extrajobPrice = document.getElementById("extrajobPrice")
     const listName = list.textContent
     if (list.classList.contains("listUnmarked")) {
-      list.classList.replace( "listUnmarked", "listMarked")
-      console.log("mudou para marcado")
+      list.classList.replace("listUnmarked", "listMarked")
       PLUS_JOBS.push(listName)
+      calcBudget();
+
       list.style.display = "none"
 
     }
     else if (list.classList.contains("listMarked")) {
-      list.classList.replace( "listMarked","listUnmarked")
-      console.log("mudou para desmarcado")
+      list.classList.replace("listMarked", "listUnmarked")
 
     }
 
@@ -126,24 +127,23 @@ for (let list of listaExtraItems) {
         PLUS_JOBS.length = 0;
         reset.remove()
         Array.from(listaExtraItems).forEach(element => {
-          element.classList.replace( "listMarked","listUnmarked")
-      
-      });
-      list.style.display = "inherit"
+          element.classList.replace("listMarked", "listUnmarked")
+
+        });
+        list.style.display = "inherit"
 
       }
     }
-    calcBudget();
   };
 
 }
 
-function renderForm(){
+function renderForm() {
   const jobPicked = localStorage.getItem("job_name")
   forms.forEach((form) => {
 
-    if(jobPicked === form.name){
-      
+    if (jobPicked === form.name) {
+
       briefingForm.innerHTML = `
       ${form.form}
       `
@@ -151,15 +151,17 @@ function renderForm(){
   })
 }
 
-function calcBudget(){
-  const newPlusJob = PLUS_JOBS.map((str) => str.replace(/\D/g, ''))
-  let num = 0
-  newPlusJob.forEach(job => job += num)
-  // budget.textContent = PLUS_JOBS
-  console.log(somPlusJob)
+function calcBudget() {
+  const newPlusJob = PLUS_JOBS.map((str) => Number(str.replace(/\D/g, '')))
 
+  let total = 0
+  newPlusJob.forEach((job) => {
+    total += job
+  })
 
+  console.log(total)
 }
+
 // function renderPortfolio(){
 //   portfolio.forEach((job) => {
 //     const portfolioJob = document.createElement("img");
