@@ -3,7 +3,7 @@ export const jobs = [
     id: "brand",
     name: "BrandBook",
     slogan: "Crie marcas memoráveis e aplique-as nos seus materiais de marketing!",
-    image: "mockups/__brand.png",
+    image: "/mockups/__brand.png",
     desc: `
     <h1>O que será entregue no BrandBook?</h1>
     <ul>
@@ -34,7 +34,7 @@ export const jobs = [
   {
     id: "print",
     name: "Printed Pack",
-    image: "mockups/__print.png",
+    image: "/mockups/__print.png",
     slogan: "Crie materiais gráficos para seu escritório ou para seu ponto de venda!",
     desc: 
     `
@@ -67,7 +67,7 @@ export const jobs = [
   {
     id: "web",
     name: "Web Pack",
-    image: "mockups/__web.png",
+    image: "/mockups/__web.png",
     slogan: "Crie seu site institucional ou uma página de vendas!",
     desc: 
     `
@@ -84,7 +84,7 @@ export const jobs = [
   {
     id: "media",
     name: "Media Pack",
-    image: "mockups/__media.png",
+    image: "/mockups/__media.png",
     slogan: "Faça seu feed ter mais engajamento e converta mais clientes com criativos de conversão!",
     desc: 
     `
@@ -100,7 +100,7 @@ export const jobs = [
   },
   {
     id: "visual",
-    image: "mockups/__visual.png",
+    image: "/mockups/__visual.png",
     name: "Visual Pack",
     slogan: "Crie vídeos ou animações profissionais para apresentar seu produtos!",
     desc: 
