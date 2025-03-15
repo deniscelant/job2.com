@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    gap: 80px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header input{
+    border: solid #2929ce 2px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+
+}
+
+#headerMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+h1 {
+    font-family: "Parkinsans", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+    color: #1b1b8a;
+
+}
+
+h2 {
+    font-family: "Parkinsans", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(48, 48, 48);
+
+}
+
+h3 {
+    font-family: "Parkinsans", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(48, 48, 48);
+
+}
+
+h4 {
+    font-family: "Parkinsans", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(48, 48, 48);
+
+}
+
+p {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(48, 48, 48);
+}
+
+ul {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(10, 10, 50);
+
+}
+
+label{
+    font-family: "Parkinsans", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+input {
+    font-family: "Parkinsans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    background-color: #2929ce;
+    font-family: "Parkinsans", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: unset;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+
+.fa-solid{
+    padding-bottom: 15px;
+}
+
+
+form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: baseline;
+    text-align: left;
+    gap: 15px;
+}
+
+footer{
+    width: 100%;
+    padding: 25px;
+    background-color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 15px;
+}
+
