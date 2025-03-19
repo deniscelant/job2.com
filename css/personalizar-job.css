@@ -1,5 +1,9 @@
 
-
+#listaExtra{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 25px;
+}
 #listaExtra li{
     list-style: none;
 }

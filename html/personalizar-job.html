@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personalizar job</title>
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/personalizar-job.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Personalize seu projeto</h1>
     <div id="projAtual">
-        <h1 class="tm_tittle">Nome do produto</h1>
-        <p class="tm_price">Preço</p>
+      <h1 class="tm_tittle">Nome do produto</h1>
+      <p class="tm_price">Preço</p>
     </div>
-    <ul id="listaExtra">
-
-    </ul>
+    <ul id="listaExtra"></ul>
     <!--- add li via js; subtrair li ordenado com click e transfere para lista com texto {e armazena num objeto de materiais extras}-->
     <a href="form.html">
-        <button>Ir para briefing</button>
+      <button>Ir para briefing</button>
     </a>
+    <iframe
+      src="budget-bar.html"
+      width="100%"
+      height="180px"
+      style="margin-top: 25px"
+    ></iframe>
+
     <script src="/js/script.js" type="module"></script>
-
-</body>
-
+  </body>
 </html>

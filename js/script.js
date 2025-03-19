@@ -14,6 +14,7 @@ const listaExtra = document.getElementById("listaExtra");
 const portfolioDiv = document.getElementById("portfolioDiv");
 const budget = document.getElementById("budget");
 
+let total = 0
 
 if (document.title === "Home") {
   renderCatalog();
@@ -152,14 +153,16 @@ function renderForm() {
 }
 
 function calcBudget() {
-  const newPlusJob = PLUS_JOBS.map((str) => Number(str.replace(/\D/g, '')))
-
-  let total = 0
-  newPlusJob.forEach((job) => {
-    total += job
+  // const newPlusJob = PLUS_JOBS.map((str) => Number(str.replace(/\D/g, '')))
+  const product = document.querySelectorAll("p");
+  Array.from(product).forEach((prod) => {
+    prod.onclick = () =>{
+      let str = Number(prod.textContent);
+      let some = total + str;
+    }
   })
 
-  console.log(total)
+  budget.textContent = some;
 }
 
 // function renderPortfolio(){
